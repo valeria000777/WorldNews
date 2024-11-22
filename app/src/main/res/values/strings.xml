@@ -2,6 +2,8 @@
 
  <string name="app_name">World News</string>
  <string name="pick_a_country">Pick a country</string>
+ <string name="pick_categories">Pick some categories</string>
+
 
 
 </resources>
