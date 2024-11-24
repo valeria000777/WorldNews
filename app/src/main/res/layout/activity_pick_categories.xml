@@ -28,14 +28,14 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="20dp"
       android:text="@string/pick_categories"
-      android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+      android:textAppearance="@style/TextAppearance.AppCompat.Medium"
       app:layout_constraintStart_toStartOf="@+id/guideline"
       app:layout_constraintTop_toTopOf="parent" />
 
   <GridLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_marginTop="20dp"
+      android:layout_marginTop="@dimen/margin"
       app:layout_constraintTop_toBottomOf="@id/textView"
       android:columnCount="2"
       android:rowCount="1"
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
        >
-      <include layout="@layout/country_card" />
+      <include layout="@layout/sports_card" />
 
     </FrameLayout>
 
@@ -55,27 +55,15 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         >
-      <include layout="@layout/country_card" />
+      <include layout="@layout/health_card" />
 
     </FrameLayout>
 
-    <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        >
-      <include layout="@layout/country_card" />
 
-    </FrameLayout>
 
-    <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        >
-      <include layout="@layout/country_card" />
 
-    </FrameLayout>
+
+
 
   </GridLayout>
 
